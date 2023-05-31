@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dynamics Connection</title>
+  </head>
+  <body>
+    <img
+      src="https://www.conversica.com/wp-content/uploads/2023/01/conversica-logo.svg"
+      alt="Icon"
+      class="icon"
+      style="
+        width: 180px;
+        height: 128px;
+        position: absolute;
+        top: 10px;
+        left: 60px;
+      "
+    />
+    <iframe
+      id="workatoConnection"
+      style="
+        width: 1000px;
+        height: 1500px;
+        border: 0;
+        padding-left: 30%;
+        padding-top: 150px;
+      "
+      scrolling="no"
+    ></iframe>
+
+    <script>
+      var link = localStorage.getItem('link');
+      document.getElementById('workatoConnection').src = link;
+    </script>
+  </body>
+</html>
